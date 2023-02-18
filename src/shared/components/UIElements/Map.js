@@ -12,6 +12,8 @@ const Map = props => {
             zoom: zoom
         });
 
+        console.log(map)
+
         new window.google.maps.Marker({ position: center, map: map });
 
     }, [center, zoom]);
